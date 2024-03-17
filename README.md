@@ -1,2 +1,2 @@
 # DSA
-Following the book `Grooking algorithms` by AdityaBhargava
+Following the book `Grooking algorithms` by `AdityaBhargava`
