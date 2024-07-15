@@ -18,8 +18,8 @@ Each algorithm is accompanied by detailed comments explaining its logic, time co
 
 
 ## How to Execute 
-for example if you want to run binaryTree implementation for preorder just write
-go run . --binaryTree=preorder
+for example if you want to run binaryTree implementation for preorder just type
+```go run . --binaryTree=preorder```
 
 for any other algo to run 
-go run . --selectionSort
+```go run . --selectionSort```
