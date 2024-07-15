@@ -48,3 +48,15 @@ func BinarySearchforString(arr []string, numberToCheck string) int {
 	}
 	return -1 // return -1 if item doesnt exists
 }
+func BinarySearchFindSqrtRoot(number int) int {
+	left, right := 0, number+1
+	for left < right {
+		mid := (left + right) / 2
+		if mid*mid > number {
+			right = mid
+		} else {
+			left = mid + 1
+		}
+	}
+	return left - 1
+}

@@ -15,3 +15,11 @@ Graph algorithms (e.g., Breadth-First Search, Dijkstra's Algorithm)
 Dynamic programming algorithms
 And more!
 Each algorithm is accompanied by detailed comments explaining its logic, time complexity analysis, and usage examples. Additionally, we strive to maintain clean and idiomatic Go code, following best practices and standards.
+
+
+## How to Execute 
+for example if you want to run binaryTree implementation for preorder just write
+go run . --binaryTree=preorder
+
+for any other algo to run 
+go run . --selectionSort
