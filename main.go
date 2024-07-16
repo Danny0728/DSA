@@ -71,6 +71,19 @@ func main() {
 		nodes := []int{1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1}
 		tree := dataStructure.NewBinaryTree(nodes)
 		root := tree.BuildTree()
+
+		//check if the subRoot is part of tree
+		subRootNodes := []int{2, 4, -1, -1, 5, -1, -1}
+		subTree := dataStructure.NewBinaryTree(subRootNodes)
+		subRoot := subTree.BuildTree()
+
+		fmt.Println("Is subRoot: ", root.IsSubTree(subRoot))
+		fmt.Println("No of Nodes: ", root.CountNodes())
+		fmt.Println("Sum of Nodes: ", root.Sum())
+		fmt.Println("Height of the tree: ", root.Height())
+		fmt.Println("Diameter of the Tree(Linear Approach - O(N^2)): ", root.DiameterOfTree())
+		fmt.Println("Diameter of the Tree(Optimized Approach - O(N)): ", root.DiameterOfTreeOptimized().Diameter)
+		fmt.Println("Sum of the Nodes At Kth level(depth): ", root.SumOfNodesAtKLevel(2))
 		if root != nil {
 			switch *binaryTreeFlag {
 			case "preorder":
