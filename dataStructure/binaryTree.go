@@ -243,6 +243,11 @@ func (n *Node) IsSubTree(subRoot *Node) bool {
 	return n.left.IsSubTree(subRoot) || n.right.IsSubTree(subRoot)
 }
 
+/*
+Sum of the nodes at a given level.
+Time Complexity - O(n)
+Space Complexity - O(n)
+*/
 func (n *Node) SumOfNodesAtKLevel(level int) int {
 
 	var (
