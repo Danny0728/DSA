@@ -67,7 +67,7 @@ Space Complexity - O(n)
 func (n *Node) InOrderTraversal() { // Left, Root, Right
 	if n != nil {
 		n.left.InOrderTraversal()
-		fmt.Printf("%d ", n.data)
+		fmt.Printf("%d \n", n.data)
 		n.right.InOrderTraversal()
 	} else {
 		// -1 represents a nil node.

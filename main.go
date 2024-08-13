@@ -20,6 +20,7 @@ func main() {
 	binarySearchFlag := flag.Bool("binarySearch", false, "Runs algorithms/binarySearch.go ")
 	quickSortFlag := flag.Bool("quickSort", false, "Runs algorithms/SelectionSort.go ")
 	binaryTreeFlag := flag.String("binaryTree", "", "Specify the binary tree traversal: preorder,inorder,postorder,levelorder,all")
+	bstFlag := flag.Bool("bst", false, "Runs dataStructure/bst.go ")
 
 	flag.Parse()
 
@@ -118,5 +119,29 @@ func main() {
 		} else {
 			fmt.Println("The tree is empty.")
 		}
+	}
+	if *bstFlag {
+
+		nodes := []int{10, 1, 3, 4, 2, 7, 6, 8, 11, 12, 13}
+		bst := dataStructure.NewBinarySearchTree(nodes)
+		root := bst.BuildBST()
+		fmt.Print("In-order traversal of the binary tree: ")
+		root.InOrderTraversalBST()
+		fmt.Println()
+
+		fmt.Println("Input key exists?: ", bst.Search(root, 1))
+
+		root.DeleteNode(13)
+		fmt.Print("In-order traversal of the binary tree(after deleting node): ")
+		root.InOrderTraversalBST()
+		fmt.Println()
+
+		fmt.Print("PrintInRange of bst :")
+		root.PrintInRange(2, 11)
+		fmt.Println()
+
+		fmt.Print("PrintPaths of bst : \n")
+		root.PrintRootToLeafPaths([]int{})
+		fmt.Println()
 	}
 }
