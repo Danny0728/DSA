@@ -9,12 +9,12 @@ This repository is a comprehensive collection of algorithms and data structures 
 ## What's Inside?
 Inside this repository, you'll find implementations of a wide range of algorithms and data structures, including but not limited to:
 
-Sorting algorithms (e.g., Quicksort, Merge Sort, Selection Sort)
+Sorting algorithms (e.g., Quicksort, Merge Sort, Selection Sort) 
 Search algorithms (e.g., Binary Search)
-Graph algorithms (e.g., Breadth-First Search, Dijkstra's Algorithm)
-Dynamic programming algorithms
+<!--Graph algorithms (e.g., Breadth-First Search, )
+Dynamic programming algorithms -->
 And more!
-Each algorithm is accompanied by detailed comments explaining its logic, time complexity analysis, and usage examples. Additionally, we strive to maintain clean and idiomatic Go code, following best practices and standards.
+Each algorithm is accompanied by detailed comments explaining its logic, time complexity analysis, and usage examples. Additionally, we strive to maintain a clean and idiomatic Go code, following best practices and standards.
 
 
 ## How to Execute 
